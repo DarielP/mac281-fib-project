@@ -25,8 +25,7 @@ int main(){
     int n, c, first = 0, second = 1, next, primeCount = 0;
     int primes[MAX];
 
-    cout << "Enter the number of "
-    		"" << endl;
+    cout << "Enter a positive number  " << endl;
     cin >> n;
 
     cout << "First " << n << " terms of Fibonacci series are :- " << endl;
