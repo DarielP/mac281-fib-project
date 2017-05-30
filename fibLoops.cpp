@@ -5,7 +5,7 @@ using namespace std;
 
 int main()
 {
-     long double n1 = 0,n2=1,next=1;
+     unsigned long long n1 = 0,n2=1,next=1;
 	int n;
 
     cout << "Enter a positive number: "<< endl;
