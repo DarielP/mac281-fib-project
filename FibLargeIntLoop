@@ -1,6 +1,6 @@
 #include<iostream>
 #include<ctime>
-#include "InfInt.h"//allows int to store large integers
+#include "InfInt.h"//allows big integers
 using namespace std;
 int main(){
 clock_t start = clock();
