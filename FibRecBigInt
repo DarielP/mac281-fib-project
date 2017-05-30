@@ -1,0 +1,29 @@
+#include<iostream>
+#include <time.h>
+#include "InfInt.h"//allows int to store large integers
+using namespace std; 
+InfInt Fibonacci(int); 
+int main(){
+InfInt fib; 
+int n=100;//n=100,n=500,n=1000
+clock_t start = clock();
+fib = Fibonacci(n);
+clock_t end = clock();
+double duration = (double)(end-start)/CLOCKS_PER_SEC;
+cout << "Fibonacci(" << n << ") is: " << fib << endl;
+cout << "Time taken: " << duration << " seconds." << endl;
+return 0; 
+}
+InfInt Fibonacci(int n)
+{ 
+if(n==0)
+{
+return 0; 
+}
+if(n==1)
+{
+return 1;
+}
+return (Fibonacci(n-1)+Fibonacci(n-2));
+ 
+}
