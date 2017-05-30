@@ -16,8 +16,8 @@ second = sum;
 }
  
 clock_t end = clock();
-double duration = (double)(end-start)/CLOCKS_PER_SEC;
+double execution = (double)(end-start)/CLOCKS_PER_SEC;
 cout << "Fibonacci at: " << n << " is: " << sum << endl; 
-cout << "Time taken: " << duration << " seconds." << endl;
+cout << "Execution Time: " << execution << " seconds." << endl;
 return 0; }
 
