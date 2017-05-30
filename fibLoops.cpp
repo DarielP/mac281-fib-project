@@ -12,19 +12,18 @@ int main()
     cin >> n;
     clock_t start, end;
     start = clock();
+    cout<<"Fibonacci Series: ";
 	for (int i = 0; i <= n; ++i)
 	{
 		next = n1 + n2;
 		n1 = n2;
 		n2 = next;
+		  cout<<" "<<next ;
 	}
 	end=clock();
 	double execution = (double)(end-start)/CLOCKS_PER_SEC;
 
-    cout << "Fibonacci series at "<<n<<" terms:  "<<next << endl;
     cout << "Execution time = " << execution << endl;
 
 	return 0;
 }
-
-
